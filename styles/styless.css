@@ -14,7 +14,6 @@ body{
 
 header{
     background-color: rgb(60, 7, 109);
-    border-bottom: solid;
 }
 
 .titulo{
@@ -28,6 +27,12 @@ header{
     background-repeat: no-repeat;
 }
 
+h1{
+    color: black;
+    text-align: center;
+    font-size: 45px;
+}
+
 nav {
     padding: 10px;
     background-color: rgb(60, 7, 109);
@@ -36,6 +41,7 @@ nav {
     align-items: center;
     text-decoration: none;
     border-top: solid black;
+    border-bottom: solid black;
 }
 
 a{
@@ -70,13 +76,16 @@ footer{
     background-color: rgb(60, 7, 109);
     background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
     background-position: left;
-    background-size: 70px;
+    background-size: 80px;
     background-repeat: no-repeat;
+    padding-top: 10px;
+    border-top: solid;
     display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
 
 @media (min-width:768px) and (max-width:1199px){
     .noticias{
@@ -218,7 +227,20 @@ h3{
 
 /*fotos*/
 
-#carru{
-    width: 70%;
-    padding-bottom: 25px;
+#carouselExample{
+    padding: 20px;
+}
+
+#carouselExample2{
+    padding: 20px;
+}
+
+.fotos{
+    padding-bottom: 20px;
+}
+
+@media (min-width:768px) {
+    .fotos{
+        display: flex;
+    }
 }
