@@ -23,7 +23,7 @@ header{
     text-decoration: none;
     background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
     background-position: left;
-    background-size: 50px;
+    background-size: 70px;
     background-repeat: no-repeat;
     border-bottom: solid black;
 }
@@ -42,6 +42,8 @@ nav a{
     text-decoration: none;
     color: black;
     border-bottom: solid black;
+    font-weight: 600;
+    padding: 5px;
 }
 
 
@@ -51,6 +53,21 @@ nav a:hover{
 
 main{
     padding: 10px;
+}
+
+p{
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+h3{
+    color: white;
+    text-decoration: underline;
+    font-weight: 800;
 }
 
 #textnot{
@@ -185,12 +202,14 @@ h2{
 article ul ul li{
     font-weight: 500;
     list-style-type: none;
+    color: white;
 }
 
 article ul ul li:hover{
     background-color: rgb(60, 7, 109);
     box-shadow: 0 0 1rem black;
 }
+
 
 @media (min-width:500px){
     .fixture{
@@ -227,6 +246,7 @@ h3{
 .plantel ul li{
     list-style-type: none;
     margin: 5px;
+    color: white;
 }
 
 .plantel ul li:hover{
@@ -272,5 +292,51 @@ h3{
 @media (min-width:768px) {
     .fotos{
         display: flex;
+    }
+}
+
+/*hacete socio*/
+.form{
+    padding: 10px;
+}
+
+/*sponsors*/
+.sponsors{
+    padding: 15px;
+}
+
+.sponsors p{
+    padding-top: 8px;
+}
+
+.imgsponsor{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 70%;
+}
+
+@media (min-width:1024px) {
+    .sponsors{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "foton gamisol"
+        "yacco rvl";
+    }
+    #foton{
+        display: grid;
+        grid-area: foton;
+    }
+    #gamisol{
+        display: grid;
+        grid-area: gamisol;
+    }
+    #yacco{
+        display: grid;
+        grid-area: yacco;
+    }
+    #rvl{
+        display: grid;
+        grid-area: rvl;
     }
 }
