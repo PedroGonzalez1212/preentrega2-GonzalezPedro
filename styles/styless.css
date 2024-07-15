@@ -165,7 +165,7 @@ footer{
     main{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 400px 900px;
+        grid-template-rows: 530px;
         grid-template-areas: 
         "texto video"
         "noticia video";
@@ -291,6 +291,10 @@ h3{
     padding-bottom: 20px;
 }
 
+.carousel{
+    width: 50% 50%;
+}
+
 @media (min-width:768px) {
     .fotos{
         display: flex;
@@ -300,6 +304,10 @@ h3{
 /*hacete socio*/
 .form{
     padding: 10px;
+}
+
+h3{
+    padding-left: 10px;
 }
 
 /*sponsors*/
