@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+  position: relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgb(60, 7, 109);
+}
+
+.titulo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
+  background-position: left;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  border-bottom: solid black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+}
+
+nav a {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-bottom: solid black;
+  font-weight: 600;
+  padding: 5px;
+}
+nav a:hover {
+  box-shadow: 0 0 1rem white;
+}
+
+main {
+  padding: 10px;
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+  font-weight: 800;
+}
+
+#textnot {
+  margin: 5px;
+}
+
+#imgnot,
+#video {
+  width: 350px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .titulo {
+    border: none;
+  }
+  nav {
+    padding: 10px;
+    background-color: rgb(60, 7, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-top: solid black;
+    border-bottom: solid black;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 15px;
+    border: black;
+    border-bottom: none;
+  }
+  .noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen texto";
+  }
+  #imgnot {
+    display: grid;
+    grid-area: imagen;
+    width: 410px;
+    padding-bottom: 10px;
+  }
+  #textnot {
+    display: grid;
+    grid-area: texto;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    padding: 10px;
+    background-color: rgb(60, 7, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: solid black;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 15px;
+    border: black;
+    border-bottom: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 530px;
+    grid-template-areas: "texto video" "noticia video";
+  }
+  .noticias {
+    grid-area: noticia;
+  }
+  #video {
+    display: grid;
+    grid-area: video;
+    width: 100%;
+  }
+  #imgnot {
+    width: 470px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+h2 {
+  padding: 10px;
+}
+
+.fixture {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+article ul ul li {
+  font-weight: 500;
+  list-style-type: none;
+  color: white;
+}
+article ul ul li:hover {
+  background-color: rgb(60, 7, 109);
+  box-shadow: 0 0 1rem black;
+}
+
+@media (min-width: 500px) {
+  .fixture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "clausura apertura";
+    padding: 20px;
+    text-align: left;
+  }
+  #clausura {
+    display: grid;
+    grid-area: clausura;
+  }
+  #apertura {
+    display: grid;
+    grid-area: apertura;
+  }
+}
+@media (min-width: 1200px) {
+  .fixture {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+}
+.plantel {
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+h3 {
+  text-decoration: underline;
+  padding: 5px 0px 5px 0px;
+}
+
+.plantel ul li {
+  list-style-type: none;
+  margin: 5px;
+  color: white;
+}
+.plantel ul li:hover {
+  background-color: rgb(60, 7, 109);
+  box-shadow: 0 0 1rem black;
+}
+
+@media (min-width: 550px) and (max-width: 1199px) {
+  .plantel {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 340px 340px;
+    grid-template-areas: "arquero defensor" "medio delantero";
+  }
+}
+@media (min-width: 1200px) {
+  .plantel {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "arquero defensor medio delantero";
+    align-items: baseline;
+  }
+}
+#carouselExample,
+#carouselExample2 {
+  padding: 20px;
+}
+
+.fotos {
+  padding-bottom: 20px;
+}
+
+.carousel {
+  width: 50% 50%;
+}
+
+@media (min-width: 768px) {
+  .fotos {
+    display: flex;
+  }
+}
+.form {
+  padding: 10px;
+}
+
+h3 {
+  padding-left: 10px;
+}
+
+.sponsors {
+  padding: 15px;
+}
+.sponsors p {
+  padding-top: 8px;
+}
+
+.imgsponsor {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  width: 70%;
+}
+
+@media (min-width: 1024px) {
+  .sponsors {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "foton gamisol" "yacco rvl";
+  }
+  #foton {
+    display: grid;
+    grid-area: foton;
+  }
+  #gamisol {
+    display: grid;
+    grid-area: gamisol;
+  }
+  #yacco {
+    display: grid;
+    grid-area: yacco;
+  }
+  #rvl {
+    display: grid;
+    grid-area: rvl;
+  }
+}
+footer {
+  background-color: rgb(60, 7, 109);
+  background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
+  background-position: left;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  border-top: solid;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilos.css.map */

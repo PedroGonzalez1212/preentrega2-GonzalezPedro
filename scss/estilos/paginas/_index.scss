@@ -1,0 +1,150 @@
+.titulo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
+    background-position: left;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    border-bottom: solid black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+nav a {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid black;
+    font-weight: 600;
+    padding: 5px;
+
+    &:hover {
+        box-shadow: 0 0 1rem white;
+    }
+}
+
+main {
+    padding: 10px;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+    font-weight: 800;
+}
+
+#textnot {
+    margin: 5px;
+}
+
+#imgnot,
+#video {
+    width: 350px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .titulo {
+        border: none;
+    }
+
+    nav {
+        padding: 10px;
+        background-color: rgb(60, 7, 109);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-top: solid black;
+        border-bottom: solid black;
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 15px;
+            border: black;
+            border-bottom: none;
+        }
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "imagen texto";
+    }
+
+    #imgnot {
+        display: grid;
+        grid-area: imagen;
+        width: 410px;
+        padding-bottom: 10px;
+    }
+
+    #textnot {
+        display: grid;
+        grid-area: texto;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        padding: 10px;
+        background-color: rgb(60, 7, 109);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-bottom: solid black;
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 15px;
+            border: black;
+            border-bottom: none;
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 530px;
+        grid-template-areas: "texto video" "noticia video";
+    }
+
+    .noticias {
+        grid-area: noticia;
+    }
+
+    #video {
+        display: grid;
+        grid-area: video;
+        width: 100%;
+    }
+
+    #imgnot {
+        width: 470px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

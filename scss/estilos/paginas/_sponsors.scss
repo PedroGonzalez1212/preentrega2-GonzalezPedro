@@ -1,0 +1,41 @@
+.sponsors {
+    padding: 15px;
+
+    p {
+        padding-top: 8px;
+    }
+}
+
+.imgsponsor {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 70%;
+}
+
+@media (min-width: 1024px) {
+    .sponsors {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "foton gamisol" "yacco rvl";
+    }
+
+    #foton {
+        display: grid;
+        grid-area: foton;
+    }
+
+    #gamisol {
+        display: grid;
+        grid-area: gamisol;
+    }
+
+    #yacco {
+        display: grid;
+        grid-area: yacco;
+    }
+
+    #rvl {
+        display: grid;
+        grid-area: rvl;
+    }
+}
