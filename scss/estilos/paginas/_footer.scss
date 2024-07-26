@@ -1,13 +1,18 @@
 footer{
     background-color: rgb(60, 7, 109);
-    background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
-    background-position: left;
-    background-size: 80px;
-    background-repeat: no-repeat;
-    padding-top: 10px;
-    border-top: solid;
+    height: 110px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.imgfooter{
+    height: 100px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    padding-left: 10px;
+    padding-right: 10px;
 }

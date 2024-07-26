@@ -3,38 +3,46 @@ h2 {
 }
 
 .fixture {
-    padding-left: 10px;
+    padding-right: 65px;
     padding-bottom: 20px;
     display: block;
+    align-items: center;
     text-align: center;
 }
 
-article ul ul li {
-    font-weight: 500;
-    list-style-type: none;
-    color: white;
+article {
+    padding-bottom: 30px;
 
-    &:hover {
-        background-color: rgb(60, 7, 109);
-        box-shadow: 0 0 1rem black;
+    ul {
+        ul {
+            li {
+                font-weight: 500;
+                list-style-type: none;
+                color: white;
+
+                &:hover {
+                    background-color: rgb(60, 7, 109);
+                    box-shadow: 0 0 1rem black;
+                }
+            }
+        }
     }
 }
 
+
+
 @media (min-width: 500px){
-    .fixture {
+    main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "clausura apertura";
-        padding: 20px;
-        text-align: left;
+        grid-template-areas: 
+        "clausura apertura";
     }
-
-    #clausura {
+    #clausura{
         display: grid;
         grid-area: clausura;
     }
-
-    #apertura {
+    #apertura{
         display: grid;
         grid-area: apertura;
     }

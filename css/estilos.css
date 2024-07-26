@@ -157,12 +157,16 @@ h2 {
 }
 
 .fixture {
-  padding-left: 10px;
+  padding-right: 65px;
   padding-bottom: 20px;
   display: block;
+  align-items: center;
   text-align: center;
 }
 
+article {
+  padding-bottom: 30px;
+}
 article ul ul li {
   font-weight: 500;
   list-style-type: none;
@@ -174,12 +178,10 @@ article ul ul li:hover {
 }
 
 @media (min-width: 500px) {
-  .fixture {
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "clausura apertura";
-    padding: 20px;
-    text-align: left;
   }
   #clausura {
     display: grid;
@@ -225,6 +227,7 @@ h3 {
     grid-template-columns: 50% 50%;
     grid-template-rows: 340px 340px;
     grid-template-areas: "arquero defensor" "medio delantero";
+    row-gap: 58px;
   }
 }
 @media (min-width: 1200px) {
@@ -300,16 +303,21 @@ h3 {
 }
 footer {
   background-color: rgb(60, 7, 109);
-  background-image: url(../assets/images/ESCUDO-KIKINES-VECTORIZA-_1_-_1_.png);
-  background-position: left;
-  background-size: 80px;
-  background-repeat: no-repeat;
-  padding-top: 10px;
-  border-top: solid;
+  height: 110px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.imgfooter {
+  height: 100px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
