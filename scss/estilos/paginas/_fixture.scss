@@ -32,23 +32,14 @@ article {
 
 
 @media (min-width: 500px){
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "clausura apertura";
-    }
-    #clausura{
-        display: grid;
-        grid-area: clausura;
-    }
-    #apertura{
-        display: grid;
-        grid-area: apertura;
+    .fixture{
+        display:flex;
+        justify-content: space-around;
+        align-items: baseline;
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:880px) {
     .fixture{
         display: flex;
         justify-content: space-around;
