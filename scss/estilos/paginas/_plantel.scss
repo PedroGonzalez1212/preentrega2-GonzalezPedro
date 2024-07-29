@@ -1,5 +1,4 @@
 .plantel {
-    padding: 10px;
     display: block;
     text-align: center;
 }
@@ -28,6 +27,7 @@ h3 {
         grid-template-rows: 340px 340px;
         grid-template-areas: "arquero defensor" "medio delantero";
         row-gap: 58px;
+        padding-bottom: 30px;
     }
 }
 

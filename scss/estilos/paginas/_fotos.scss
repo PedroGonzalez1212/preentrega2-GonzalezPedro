@@ -1,0 +1,36 @@
+.fotos{
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "fotos1"
+    "fotos2";
+    gap: 30px;
+}
+
+#carrousElexample{
+    display: grid;
+    grid-area: fotos1;
+}
+
+#carrousElexample2{
+    display: grid;
+    grid-area: fotos2;
+}
+
+@media (min-width:1200px) {
+    .fotos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "izquierda derecha";
+    }
+    #carrousElexample{
+        display: grid;
+        grid-area: izquierda;
+    }
+    
+    #carrousElexample2{
+        display: grid;
+        grid-area: derecha;
+    }
+}
