@@ -1,5 +1,6 @@
 .sponsors {
     padding: 15px;
+    padding-bottom: 130px;
 
     p {
         padding-top: 8px;
@@ -9,14 +10,18 @@
 .imgsponsor {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
-    width: 70%;
+    width: 75%;
 }
 
 @media (min-width: 1024px) {
     .sponsors {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-areas: "foton gamisol" "yacco rvl";
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "foton gamisol"
+        "yacco rvl";
+        gap: 15px;
     }
 
     #foton {

@@ -194,10 +194,11 @@ article ul ul li:hover {
 .plantel {
   display: block;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 h3 {
-  text-decoration: underline;
+  text-decoration: none;
   padding: 5px 0px 5px 0px;
 }
 
@@ -219,7 +220,7 @@ h3 {
     grid-template-rows: 340px 340px;
     grid-template-areas: "arquero defensor" "medio delantero";
     row-gap: 58px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {
@@ -232,10 +233,11 @@ h3 {
   }
 }
 .fotos {
-  padding: 20px;
+  padding: 50px;
   display: grid;
   grid-template-areas: "fotos1" "fotos2";
   gap: 30px;
+  padding-bottom: 100px;
 }
 
 #carrousElexample {
@@ -251,8 +253,9 @@ h3 {
 @media (min-width: 1200px) {
   .fotos {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-areas: "izquierda derecha";
+    padding-bottom: 100px;
   }
   #carrousElexample {
     display: grid;
@@ -265,14 +268,20 @@ h3 {
 }
 .form {
   padding: 10px;
+  padding-bottom: 100px;
 }
 
 h3 {
   padding-left: 10px;
 }
 
+.form-label {
+  color: white;
+}
+
 .sponsors {
   padding: 15px;
+  padding-bottom: 130px;
 }
 .sponsors p {
   padding-top: 8px;
@@ -281,14 +290,16 @@ h3 {
 .imgsponsor {
   filter: brightness(1.1);
   mix-blend-mode: multiply;
-  width: 70%;
+  width: 75%;
 }
 
 @media (min-width: 1024px) {
   .sponsors {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: "foton gamisol" "yacco rvl";
+    gap: 15px;
   }
   #foton {
     display: grid;
@@ -324,6 +335,4 @@ footer {
   mix-blend-mode: multiply;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
