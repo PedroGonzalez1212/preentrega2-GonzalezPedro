@@ -112,6 +112,9 @@ h3 {
     grid-area: texto;
     padding-top: 15px;
   }
+  p {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1200px) {
   nav {
@@ -255,7 +258,7 @@ h3 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "izquierda derecha";
-    padding-bottom: 100px;
+    padding-bottom: 265px;
   }
   #carrousElexample {
     display: grid;
